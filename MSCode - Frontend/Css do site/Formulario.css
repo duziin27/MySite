@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    background-image: linear-gradient(
+        to left,
+        blue,
+        orangered,
+        yellow);
+        background-size: 500% 100%;
+        animation: degrade-animado 5s infinite alternate;
+}
+
+.navbar-brand{
+    font-size:xx-large;
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: linear-gradient( to left, blue, orangered, yellow );
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+main{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    border-radius: 10px;
+    width: 50%;
+    background-color: rgb(241, 241, 241);
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.botao{
+    margin: 10px;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.botao:hooter{
+
+}
+
+.check {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.divs{
+    display: flex;
+    flex-direction: row;
+}
+
+.grupo{
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+
+.inputs{
+    width: 90%;
+    
+}
+
+.labels{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.login{
+    margin-top: 10px;
+}

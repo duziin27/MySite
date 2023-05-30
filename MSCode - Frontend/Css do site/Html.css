@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.navbar{
+    background-color: orangered;
+    color: rgb(0, 0, 0); 
+}
+
+.navbar-brand{
+    font-size:xx-large;
+    font-family: 'Bebas Neue', sans-serif;
+}   
+
+body{
+    background-color: orange;
+}
+
+span{
+    background-color: rgb(255, 157, 108);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.container{
+    background-color: rgb(255, 239, 207);
+    border: 5px solid orangered;
+    border-radius: 5px;
+}
+
+p, h6, li{
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: justify;
+}
+
+h3, h4{
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: justify;
+}
+
+.html{ 
+    padding: 10px; 
+}
+
+.exemploslink{
+    text-decoration: underline
+}
+
+.formexemple{
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+}
+
+form > div{
+    margin: 10px;
+}
+
+#form{
+    width: 70%;
+}
+
+footer{
+    background-color: orangered;  
+    margin-top: 1.5rem; 
+    padding: 10px;
+    text-align: center;
+}

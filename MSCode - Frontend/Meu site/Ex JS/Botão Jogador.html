@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da Aula 1</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+        h1{
+            color: rgb(30, 30, 30);
+            background-color: whitesmoke;
+            border-radius: 5px;
+            border: 5px solid rgb(0, 66, 9);
+            text-align: center;
+        }
+        p {
+            font-family: 'helvetica neue', helvetica, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgba(3, 252, 36, 0.6);
+            background: rgba(0, 102, 0, 0.3);
+            color: rgba(251, 255, 252, 0.6);
+            box-shadow: 1px 1px 2px rgba(0, 0, 200, 0.4);
+            border-radius: 10px;
+            padding: 3px 10px;
+            display: inline-block;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Use o especionar elementos</h1>
+
+    <div>
+        <button>
+            <a href="/Meu site/JavaScript.html">Voltar</a>
+        </button>
+    </div>
+
+    <div>
+        <p>Jogador 1: Vazio</p>
+    <br>
+    <p class="j2">Jogador 2: Vazio</p>
+    <br>
+    <p class="j3">Jogador 3: Vazio</p>
+    <br>
+    </div>
+<!--Pesquisar sobre função-->
+    <script>
+        let jogador = document.querySelector('p')
+        let jogador2 = document.querySelector('.j2')
+        let jogador3 = document.querySelector('.j3')
+
+        jogador.addEventListener('click', alterarNome)
+        jogador2.addEventListener('click', alterarNome)
+        jogador3.addEventListener('click', alterarNome)
+
+        function alterarNome() {
+            let nome = prompt('Insira o seu nome')
+            jogador.textContent = 'Jogador 1: ' + nome
+            let nome2 = prompt('Insira o seu nome')
+            jogador2.textContent = 'Jogador 2: ' + nome2
+            let nome3 = prompt('Insira o seu nome')
+            jogador3.textContent = 'Jogador 3: ' + nome3
+        }
+
+        console.log(jogador)
+
+    </script>
+</body>
+
+</html>

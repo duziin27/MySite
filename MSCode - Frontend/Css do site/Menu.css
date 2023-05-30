@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-image: linear-gradient(
+        to left,
+        blue,
+        orangered,
+        yellow);
+        background-size: 500% 100%;
+        animation: degrade-animado 5s infinite alternate;
+}
+
+.navbar-brand{
+    font-size:xx-large;
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: linear-gradient( to left, rgb(0, 213, 255), #ff00ae, rgb(4, 255, 0) );
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.btn-secondary{
+  display: block;
+  justify-content: center;
+  background-image: linear-gradient(
+        to left,
+        blue,
+        orangered,
+        yellow);
+        background-size: 500% 100%;
+        animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
+.container{
+    background-color: rgb(238, 238, 238);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.html{
+    background-color: orange;  
+    padding: 10px;  
+}
+
+.exemplos{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    margin-top: 2rem;
+}
+
+footer{
+    background-color: white;
+    margin-top: 1.5rem; 
+    padding: 10px;
+    text-align: center;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  .featurette-image{
+    display: flex;
+    margin: 20px;
+  }
+
+  .featurette{
+    align-items: center;
+  }
+
+  p{
+    text-align: justify;
+  }
+
+
+

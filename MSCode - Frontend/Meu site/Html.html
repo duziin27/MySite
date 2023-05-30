@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/Css do site/Html.css">
+
+</head>
+
+<body>
+  <!--Navbar (Bootstrap)-->
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#"><img src="/Imagens do site/Html/HTML5LOGO.png" width="40px" alt=""> HTML</a>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Conteúdo específico" aria-label="Pesquisar">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Em Breve</button>(Out of order)
+    </form>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Formulario.html">Cadastro</a>
+      </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Conteúdos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Css.html">CSS</a>
+            <div class="dropdown-divider">
+            </div>
+            <a class="dropdown-item" href="JavaScript.html">Javascript</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="BootsStrap.html">Bootstrap</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Back-end</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Full stack</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!--Logo HTML-->
+  <center>
+    <img src="/Imagens do site/Html/HTML5LOGO.png" alt="" class="html" width="150px">
+  </center>
+
+  <!--Artigo-->
+  <div class="container">
+    <!--O que é HTML?-->
+    <div>
+      <h3>O que é HTML?</h3>
+      <p>
+        Para definir o que é HTML, é preciso entender a sigla primeiro. Ela significa Hyper Text Markup Language, ou
+        seja,
+        linguagem de marcação de hipertexto (elementos como textos, imagens e vídeos conectados entre si).
+      </p>
+
+      <p>
+        Trata-se de uma linguagem de marcação para desenvolver páginas e documentos eletrônicos para a internet,
+        fornecendo
+        informações para usuários, navegadores e mecanismos de busca.
+      </p>
+
+      <div>
+        <h4>
+          O HTML é usado em:
+        </h4>
+        <ul>
+          <li>
+            desenvolvimento frontend, ou seja, na parte visual das aplicações web;
+          </li>
+          <li>
+            desenvolvimento de aplicativos mobile, tanto para Android como para iOS;
+          </li>
+          <li>
+            desenvolvimento de jogos.
+          </li>
+        </ul>
+      </div>
+
+      <p>
+        Também é importante entender que ele não é uma linguagem de programação, já que seu objetivo não é criar um
+        software, e, sim, marcar a estrutura de linguagens de programação de fato, como o Javascript. Ou seja, ele
+        indica
+        onde os elementos aparecerão na aplicação.
+      </p>
+
+      <p>
+        Para ficar em um exemplo, o HTML define como será feita a divisão de espaços em uma página e dá significados a
+        eles
+        de acordo com sua função, como o cabeçalho de um site, o menu lateral e por aí vai.
+      </p>
+
+      <p>
+        Essa organização espacial da interface de um site é fundamental para a garantia de uma boa navegabilidade por
+        parte
+        do usuário. Dessa forma, ele não fica perdido frente a um conjunto de informações desconexas e sem ligação entre
+        si.
+      </p>
+
+      <p>
+        Em especial, se você pensar em criar um site profissional para sua marca comercial ou projeto institucional, é
+        justamente essa interface intuitiva e agradável que será o diferencial entre a quantidade cliques, acessos e
+        tempos de sessão nas páginas.
+      </p>
+    </div>
+
+    <!--Como funciona o HTML?-->
+    <div>
+      <h3>Como funciona o HTML?</h3>
+
+      <p>
+        Como mencionado, o HTML é uma linguagem de marcação usada para marcar e dar significado às informações
+        existentes
+        em
+        uma página. Assim sendo, a página de um site ou app contém marcações feitas com HTML. Essas marcações, chamadas
+        de
+        tags, são interpretadas pelo navegador. Este, por sua vez, “entende”, que determinado trecho da página contém um
+        título, um parágrafo, uma imagem, uma lista e etc...
+      </p>
+
+      <center>
+        <textarea class="alinhar" name="" id="" cols="50" rows="7">
+<h1>Muito usado em titulos e subtitulos</h1>
+
+<p>Paragrafos</p>
+      
+<img>Imagens e até mesmo hyperlinks
+      
+<div>Divisões</div>
+
+&lt;p&gt;Este é um parágrafo&lt;/p&gt;
+        </textarea>
+
+        <div>
+          <img class="alinhar" src="/Imagens do site/Html/Exemplo do html.png" alt="" width="390px">
+        </div>
+      </center>
+
+      <p>
+        No exemplo acima é possivel ver um exemplo de estrutura do codigo seguido de como fica no site.
+      </p>
+    </div>
+
+    <!--Tags do HTML-->
+    <div>
+      <h3>Tags do HTML</h3>
+      <p>
+        Um documento HTML é composto por tags, as quais possuem um nome e aparecem entre os sinais < e>, por exemplo, em
+          <span>html</span> e <span>head</span>. Naquele exemplo também vimos que algumas tags precisam ser abertas e
+          fechadas, como em <span>body</span>. Nesse caso, a tag de fechamento deve conter a barra/ antes do nome.
+          Outras, porém, não precisam ser fechadas, como a tag <span>meta</span>. Nesses casos, a adição da barra/ no
+          final da própria tag é opcional.
+      </p>
+    </div>
+
+    <!--Tags de comentários em HTML-->
+    <div>
+      <h3>Tags de comentários em HTML</h3>
+
+      <p>
+        Dentro de um documento, muitas vezes precisamos fazer comentários, para facilitar no desenvolvimento. Com isso,
+        o código fica mais organizado e podemos deixar anotações importantes para possíveis mudanças, ou apenas para
+        orientar o código. Dessa forma, na tag de comentários (que é aberta com <!– e fechada com –> ), todos elementos
+          incluídos dentro dela serão apenas comentários, ou seja, não serão visíveis no navegador.
+      </p>
+
+      <p>
+        <span> &lt;!-- </span> Meu comentário em HTML <span>--></span>
+        <br>
+        <span>
+          &lt;p>
+        </span> Olá Mundo <span>
+          &lt;p>
+        </span> <span> &lt;!-- </span> aqui é o meu paragrafo <span>--></span>
+
+      <p>
+        Como resultado final no navegador, teremos:
+      </p>
+
+      <p>
+        Olá Mundo
+      </p>
+
+      <p>Repare que todo conteúdo das tags de comentário não aparecerá, sendo restrito apenas a quem estiver
+        lendo o seu código HTML. Pratique utilizar os comentários em seu código, isso é uma boa prática e
+        muito
+        recomendada dentro do mundo do desenvolvimento.</p>
+      </p>
+    </div>
+
+    <!--Tags HTML estruturais-->
+    <div>
+      <h3>Tags HTML estruturais</h3>
+
+      <p>
+        As tags abaixo são utilizadas nos documentos em HTML, e têm função estrutural no seu código. Portanto, essas
+        tags têm grande importância na questão semântica da sua página, saber utilizá-las pode adequar o seu código para
+        uma melhor visualização por parte do navegador e do usuário, além de proporcionar uma otimização para os
+        processos de SEO.
+      </p>
+
+      <li>
+        <span>
+          &lt;header>&lt;/header>
+        </span> – Essas tags definem um cabeçalho. Portanto, todo conteúdo que estiver dentro dela faz parte de um
+        cabeçalho, podendo ser utilizado dentro de outras sessões. Não confundir com as tags <span>&lt;head>
+        </span>;
+      </li>
+      <li>
+        <span>
+          &lt;main>&lt;/main>
+        </span> – Essas tags representam o conteúdo principal do seu corpo, ou seja, o conteúdo relacionado diretamente
+        com o tópico central da página ou com a funcionalidade central da aplicação;
+      </li>
+      <li>
+        &lt;footer>&lt;/footer> – Essas tags definem um rodapé para a página, geralmente utilizadas no final da página;
+      </li>
+      <li>
+        <span>
+          &lt;section>&lt;/section>
+        </span> – Essas tags definem uma sessão para sua página;
+      </li>
+      <li>
+        <span>
+          &lt;article>&lt;/article>
+        </span> – Essas tags definem um artigo da sua página. Nesse sentido, são utilizadas para separar o conteúdo da
+        sua página. Muito utilizado principalmente por blogs ou páginas de conteúdo;
+      </li>
+      <li>
+        <span>
+          &lt;aside>&lt;/aside>
+        </span> – Essas tags representam uma seção de uma página cujo conteúdo é tangencialmente relacionado ao conteúdo
+        do seu entorno, que poderia ser considerado separado do conteúdo;
+      </li>
+      <li>
+        <span>
+          &lt;nav>&lt;/nav>
+        </span> – Essa tag define um conteúdo de navegação. Portanto, é muito utilizado em conjunto com listas e na
+        criação de menus;
+      </li>
+      <li>
+        <span>
+          &lt;div>&lt;/div>
+        </span> – Define uma divisão da página. Desta forma, funciona como um container para conteúdo de fluxo. Uma vez
+        que não possui um valor semântico, é muito utilizado para organizar melhor o conteúdo. Anteriormente ao HTML5,
+        era utilizado no lugar das categorias acima.
+      </li>
+
+    </div>
+
+    <!--Cabeçalhos do HTML-->
+    <div>
+      <h3>Cabeçalhos do HTML</h3>
+
+      <p>
+        Cabeçalhos são normalmente utilizados para identificar páginas e seções e possuem aparência diferenciada do
+        restante do texto. No HTML há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das tags
+        <span>h1</span>, <span>h2</span>, <span>h3</span>, <span>h4</span>, <span>h5</span> e <span>h6</span>, sendo
+        <span>h1</span> o maior/mais relevante e <span>h6</span> o menor/menos relevante.
+      </p>
+      <p>
+        -"De acordo com as regras de SEO, é recomendado que uma página possua apenas uma tag <span>h1</span> que indique
+        seu assunto, pois essa tag informa aos motores de busca qual sua principal palavra-chave."
+      </p>
+
+    </div>
+
+    <!--Tags HTML de texto-->
+    <div>
+      <h3>Tags HTML de texto</h3>
+      <p>
+        As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc. Vamos conhecê-las:
+      </p>
+      <li>
+        <span>
+          &lt;p>
+          &lt;/p>
+        </span> – Principal tag de texto, compõe um parágrafo;
+      </li>
+      <li>
+        <span>
+          &lt;pre>
+          &lt;/pre>
+        </span> – Tag utilizada para representar texto pré-formatado. Muito utilizada para inserir códigos;
+      </li>
+      <li>
+        <span>
+          &lt;/b>
+        </span> – Transforma o conteúdo em negrito;
+      </li>
+      <li>
+        <span>
+          &lt;i>
+          &lt;/i>
+        </span> – Transforma o conteúdo em itálico;
+      </li>
+      <li>
+        <span>
+          &lt;br>
+        </span> – Essa tag não necessita de fechamento, ela executa a função de quebra de linha.
+      </li>
+      <li>
+        <span>
+          &lt;hr>
+        </span> – Essa tag não necessita de fechamento, ela forma uma linha horizontal.
+      </li>
+    </div>
+
+    <!--Tags HTML de listas-->
+    <div>
+      <h3>Tags HTML de listas</h3>
+      <p>
+        Para poder criar uma lista, podemos utilizar uma lista ordenada, a partir das tags <span>
+          &lt;ol>
+          &lt;/ol>
+        </span>, ou uma lista não ordenada, a partir das tags <span>
+          &lt;ul>
+          &lt;/ul>
+        </span>. Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags <span>
+          &lt;li>
+          &lt;/li>
+        </span>.
+      </p>
+      <center>
+        <textarea name="" id="" cols="50%" rows="10">
+  <p>Minha lista ordenada:</p>
+  <ol>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+  </ol>
+  <p>Minha lista não ordenada:</p>
+<ul>
+  <li>item 1</li>
+  <li>item 2</li>
+  <li>item 3</li>
+</ul>
+</textarea>
+      </center>
+
+      <div class="esquerda">
+        <ol>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ol>
+      </div>
+      <div class="direito">
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Tag de Input-->
+    <div>
+      <h3>Tag input</h3>
+      <p>
+        A tag <span>
+          &lt;input>
+        </span> possui o atributo type, que varia entre diversos tipos (vamos explicar os principais deles abaixo).
+        Também há o atributo placeholder, que é um texto que ficará disponível enquanto nada for digitado nesse campo.
+        Também é importante definir um atributo name para cada input.
+      </p>
+      <li>
+        <span>
+          &lt;input type=”text”>
+        </span> – Define um campo que receberá qualquer caractere;
+      </li>
+      <li>
+        <span>
+          &lt;input type=”email”>
+        </span> – Define um campo que receberá caracteres e verificará se o mesmo consiste em um e-mail válido;
+      </li>
+      <li>
+        <span>
+          &lt;input type=”submit” value=”ENVIAR”>
+        </span> – Define um botão que servirá para o envio do formulário. Dentro dele, podemos atribuir o value, que
+        será o texto dentro do botão de envio.
+      </li>
+      <br>
+      <p>
+        Existe outros tipos de inputs que serão colocados nesse artigo futuramente.
+      </p>
+    </div>
+
+    <!--Textarea-->
+    <div>
+      <h3>Caixa de texto</h3>
+      <p>Assim como a tag <span>
+          &lt;input>
+        </span>, essa tag define um campo para o formulário. Porém, diferentemente, ela tem como principal
+        característica ser uma área de preenchimento de texto, ou seja, permite que o usuário escreva um texto ou uma
+        mensagem no seu interior. Também traz opções para que o usuário redimensione seu tamanho (resize). Dessa
+        forma,
+        podemos incluir uma area de texto utilizando as tags <span>
+          &lt;textarea>
+        </span> e <span>
+          &lt;/textarea>
+        </span>.</p>
+    </div>
+
+    <!--Tags HTML de formulário-->
+    <div>
+      <h3>Tags HTML de formulário</h3>
+      <p>
+        As tags de formulário são muito utilizadas para obter informações do usuário, realizar cadastros, receber
+        opiniões, entre outros. São importantíssimas para qualquer ramo do mercado.
+      </p>
+
+      <p>
+        Para iniciar um formulário, incluimos as tags <span>
+          &lt;form>
+        </span> e <span>
+          &lt;/form>
+        </span>. Posteriormente, devemos incluir o conteúdo do formulário. Digamos que, por exemplo, você queira
+        incluir
+        três campos, sendo dois para coletar informações e um para receber uma mensagem. Desta forma, para criar os
+        campos
+        de preenchimento, deverá utilizar a tag <span>
+          &lt;input>
+        </span>, enquanto para o campo referente à mensagem, deverá utilizar a tag <span>
+          &lt;textarea>
+        </span>.
+      </p>
+
+      <div>
+        <center>
+          <form class="formexemple" action="">
+            <div>
+              <label for="nome">Nome:</label>
+              <input type="text" name="nome" id="form" placeholder="Ex: Eduardo">
+            </div>
+
+            <div>
+              <label for="nome">Sobrenome:</label>
+              <input type="text" name="sobrenome" id="form" placeholder="Ex: Corrêa Brito">
+            </div>
+          </form>
+        </center>
+      </div>
+      <br>
+      <div>
+        <center>
+          <img class="img-thumbnail" src="/Imagens do site/Html/Screenshot_1.png" alt="" width="550px">
+        </center>
+      </div>
+    </div>
+
+    <!--Tags HTML de multimídia-->
+    <div>
+      <h3>Tags HTML de multimídia</h3>
+
+      <p>
+        As tags de multimídia servem para incluir imagens, vídeos, áudios, iframes e outros tipos de conteúdo
+        multimídia.
+      </p>
+
+      <h4>Imagens</h4>
+
+      <p>
+        A inserção de imagens em uma página HTML pode ser feita por meio da tag <span>img</span>, que recebe no
+        atributo
+        <span>src</span> o endereço do arquivo a ser carregado. Além desse, outros dois atributos importantes são o
+        <span>alt</span>, que indica um texto alternativo que será exibido caso o arquivo não possa ser carregado, e
+        <span>title</span>, que indica o texto que aparecerá como tooltip ao passar o mouse sobre a figura.
+      </p>
+
+      <center>
+        <img class="img-thumbnail" src="/Imagens do site/Html/Exemplo de imagem.png" alt="" width="70%">
+      </center>
+      <br>
+      <p>
+        O código insere uma imagem a partir do arquivo Exemplo de imagem.png, localizado na pasta "Html" dentro da
+        "Imagens do site" seguido de <span>width</span>, tag utilizada para demarcar largura máxima da imagem. O caso
+        da
+        tag <span>img</span>, ainda temos as tags <span>figure</span> e <span>figcaption</span>.
+      </p>
+
+      <h4>Vídeo</h4>
+      <p>
+        Essa tag serve para indicar a inserção de um vídeo. Com isso, devemos colocar alguns atributos dentro da tag
+        para poder ativar o controle, a principal dela é o <span>controls</span>. Posteriormente, incluímos a tag
+        <span>
+          &lt;source>
+        </span> com os atributos <span>src</span> e <span>type</span>, onde receberão o local em que está o vídeo e o
+        tipo do vídeo. É
+        recomendado utilizar mais de um tipo de source do mesmo vídeo, para garantir maior possibilidade de
+        compatibilidade com o navegador. Finalmente, podemos incluir uma mensagem que será renderizada apenas se o
+        navegador do usuário não suportar a tag video.
+      </p>
+
+      <center>
+        <video controls src="/Imagens do site/Html/Videos e Audios/5 MINUTOS DE HTML PARA INICIAR EM PROGRAMAÇÃO!.mp4"
+          class="img-thumbnail" width="50%">
+          Seu navegador não possui suporte para áudio.
+        </video>
+      </center>
+      <br>
+      <p>
+        Exemplo de video da Rafaella Ballerini explicando o básico sobre HTML.
+      </p>
+
+
+      <h4>Áudio</h4>
+      <p>
+        A tag <span>
+          &lt;audio>
+        </span> funciona da mesma forma que a tag <span>
+          &lt;video>
+        </span>, portanto, utilizamos a tag <span>
+          &lt;source>
+        </span> dentro dela.
+      </p>
+
+      <center>
+        <audio controls>
+          <source src="/Imagens do site/Html/Videos e Audios/Avicii - The Nights.mp3" type="audio/ogg">
+          Seu navegador não possui suporte para áudio.
+        </audio>
+      </center>
+
+    </div>
+
+    <!--Links no HTML-->
+    <div>
+      <h3>Links no HTML</h3>
+
+      <p>
+        Links são normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma
+        página. Nos dois casos, utilizamos a tag <span>a</span>, que possui o atributo <span>href</span> no qual
+        indicamos
+        o destino daquele link.
+      </p>
+      <center>
+        <img class="img-thumbnail" src="/Imagens do site/Html/Exemplo de link.png" alt="">
+      </center>
+      <br>
+      <p>
+        No exemplo citado, mostra como adicionar um link para um elemento na mesma página. Nesse caso, ao clicar no
+        link
+        o browser mudará o foco para o elemento que possui o atributo <span>id</span> igual àquele indicado no
+        <span>href</span>.
+      </p>
+
+      <p>
+        Caso esteja olhando os codigos, seja pelo aplicativo ou ispecionanar elementos da pagina, veja um link para ir
+        ao <a class="exemploslink" href="Menu.html">menu</a>, baseado no exemplo acima, ou <a
+          href="https://www.youtube.com/watch?v=UtF6Jej8yb4" class="exemploslink">clique aqui</a> para escutar a
+        melhor
+        musica já criada.
+      </p>
+    </div>
+
+    <!--Qualquer um pode acessar meu site?-->
+    <div>
+      <h3>Qualquer um pode acessar meu site?</h3>
+
+      <p>
+        Não, ao criar um arquivo html em seu computador, ele estará em uma rede privada, sendo acessado por
+        dispositivos
+        na
+        rede LAN (Local Area Network), ou seja, uma rede local em um IP privado, para que ele seja acessado de
+        qualquer
+        local, tem que estar em uma rede pública WAN (World Area Network). Para um site receber acessos, ele precisa
+        estar
+        hospedado em um servidor, onde os arquivos HTML estarão, e poderão responder às solicitações de acesso ao
+        site.
+      </p>
+      <p>
+        Por exemplo, ao digitar a URL de qualquer site, você envia uma mensagem ao servidor que o hospeda e, quando
+        consegue
+        conexão com ele, você recebe os arquivos contendo a estrutura, as páginas e todos os componentes de acordo com
+        o
+        HTML.
+      </p>
+      <p>
+        Um pequeno exemplo é saber o IP, ou DNS que o site se encontra hospedado, e sua distancia dele, tente abrir o
+        cmd
+        do
+        seu computador e digitar "ping (link do site)":
+      </p>
+
+      <center>
+        <img class="img-thumbnail" src="/Imagens do site/Html/IP youtube.png" alt="" width="70%">
+      </center>
+
+    </div>
+
+    <!--HTML 5? O que é?-->
+    <div>
+      <h3>HTML 5? O que é?</h3>
+      <p>
+        Entendeu direitinho o que é HTML, certo? Entretanto, existe uma confusão bem comum entre os mais leigos de
+        programação sobre o significado de HTML e HTML5.
+      </p>
+      <p>
+        Na verdade, a diferença entre os dois reside apenas no nível de atualização de cada código. Enquanto o HTML é
+        a
+        linguagem mais famosa de marcação utilizada para desenvolvimento de sites, o HTML5 é uma atualização e última
+        versão
+        do mesmo.
+      </p>
+      <p>
+        Inclusive, ele é a versão mais moderna do tema do nosso tópico, e uma gramática de programação mais adaptada
+        aos
+        tempos de transformação digital e novas demandas da internet que vivenciamos.
+      </p>
+    </div>
+
+    <!--Recomendação-->
+    <div>
+      <h3>Minha recomendação</h3>
+      <p>
+        Caso você seja alguem como eu que aprende escutando, vendo e fazendo, recomendo acessar o canal do Gustavo
+        Guanabara, "Curso em vídeo".
+      </p>
+      <center>
+        <iframe width="70%" height="315px" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </center>
+      <p>
+        Nesse vídeo, por exemplo, é explicado a diferença entre Front-end, Back-end e Full stack.
+      </p>
+    </div>
+  </div>
+
+
+
+</body>
+<!--Java Script do Bootstrap-->
+<div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</div>
+
+<footer>
+  Cadastre para receber novidades direto no email 
+  <br>
+  <a href="Formulario.html"> Formulário</a>
+</footer>
+
+</html>

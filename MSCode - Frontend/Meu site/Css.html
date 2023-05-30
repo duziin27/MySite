@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/Css do site/Css.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <div>
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#"><img src="/Imagens do site/Html/CSSLOGO.png" width="35px" alt=""> CSS </a>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Conteúdo específico" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Em Breve</button>(Out of order)
+      </form>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="Menu.html">Menu<span class="sr-only">(página atual)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Formulario.html">Cadastro</a>
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Conteúdos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Html.html">HTML</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="JavaScript.html">Javascript</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="BootsStrap.html">Bootstrap</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Back-end</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Full stack</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!--Logo CSS-->
+  <center>
+    <img src="/Imagens do site/Html/CSSLOGO.png" alt="" class="css" width="120px">
+  </center>
+
+  <div class="container">
+    <!--O que é CSS?-->
+    <div>
+      <h3>O que é CSS?</h3>
+      <p>
+        Cascading Style Sheet, ou CSS, trata-se de uma linguagem de marcação, amplamente utilizada com HTML ou XHTML, e
+        representa diversas possibilidades para a formatação.
+      </p>
+      <p>
+        O CSS ajuda a editar, alinhar, remover e trabalhar no espaço entre elementos de uma página. Se você se interessa
+        por esse assunto e quer conhecer mais sobre o tema, continue com a leitura do artigo e saiba mais!
+      </P>
+    </div>
+
+    <center>
+      <h4>Site sem CSS</h4>
+      <img class="exemplos" src="/Imagens do site/CSS/Exemplo 1 CSS.png" alt="" class="img-thumbnail" width="70%">
+    </center>
+
+    <center>
+      <h4>Site com CSS</h4>
+      <img class="exemplos" src="/Imagens do site/CSS/Exemplo 2 CSS.png" alt="" class="img-thumbnail" width="70%">
+    </center>
+
+    <li>
+      <a href="Nome editavel RGB.html">Exemplo do rgb animado feito todo por CSS</a>
+    </li>
+
+    <!--Como funciona o CSS?-->
+    <div>
+      <h3>Como funciona o CSS?</h3>
+      <p>
+        Diferentemente do <a href="JavaScript.html">JavaScript</a>, que se caracteriza como uma linguagem mais pesada, o
+        CSS se coloca como uma ferramenta relativamente simples, de fácil aprendizado, possibilitando a criação de
+        efeitos, profundidade, animações, páginas interativas e até jogos.
+      </p>
+      <p>
+        Então, ao pensarmos em como funciona o CSS, podemos dizer que ele se utiliza de estruturas de sintaxe simples,
+        com um seletor e seu bloco de declaração. Após selecionar um componente, declara-se o que se quer criar a partir
+        dali.
+      </p>
+      <p>
+        O CSS usa uma sintaxe simples baseada em inglês com um conjunto de regras que o governam. Como mencionamos
+        anteriormente, o HTML nunca teve a intenção de usar elementos de estilo, apenas a marcação da página. Foi criado
+        para descrever apenas o conteúdo. Por exemplo:
+        <span>&lt;p></span>Este é um parágrafo.<span>&lt;/p></span>
+      <p>
+        Mas como você estiliza o parágrafo? A estrutura da sintaxe CSS é bem simples. Tem um seletor e um bloco de
+        declaração. Você seleciona um elemento e depois declara o que deseja fazer com ele. Bastante simples, certo?
+      </p>
+
+      <p>
+        O seletor aponta para o elemento HTML que você deseja estilizar. O bloco de declaração contém uma ou mais
+        declarações separadas por ponto e vírgula.
+      </p>
+
+      <p>
+        Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos. Uma declaração CSS
+        sempre termina com um ponto-e-vírgula e os blocos de declaração são cercados por chaves.
+      </p>
+
+      <textarea class="exemplos" name="" id="" cols="50" rows="9">
+          <style>
+
+            p {
+            color: blue;
+            text-weight: bold;
+            }
+
+            </style>
+        </textarea>
+
+      <p>
+        Para utilizar-lo, podemos fazer de varias formas.
+      </p>
+
+      <div>
+        <li>
+          Escrevendo dentro da tag <br>
+          <img class="exemplos" src="/Imagens do site/CSS/Exemplo 3 do style.png" alt="">
+        </li>
+      </div>
+      <div>
+        <li>
+          Abrindo uma tag <span>
+            &lt;style>
+          </span> no &lt;head> <br>
+          <img class="exemplos" src="/Imagens do site/CSS/Exemplo 2 de style.png" alt="">
+        </li>
+      </div>
+      <div>
+        <li>
+          Linkando de um arquivo .html ao .css <br>
+          <img class="exemplos" src="/Imagens do site/CSS/Exemplo 3 do style.png" alt="">
+        </li>
+      </div>
+    </div>
+
+    <p>
+      Assim como o link do html para o css, para modificar tags, vai precisar especificar-la, escrevendo a tag em si "
+      <span>&lt;div></span> " porem assim, todas as tags "div" serão modificadas, mudar uma especifica dera ir ao html e
+      adicionar uma "classe" por exemplo:
+    </p>
+
+    <div>
+      <p><span>&lt;div class="classe">Div com classe
+          &lt;/div></span></p>
+
+      <p>É aconselhavel colocar nomes especificos, não muito grandes, ou desnecessarios, não colocar classes com nomes
+        de
+        tags e não dar espaço, pois também é possivel colocar duas classes na mesma tag</p>
+
+      <p>
+        <span>&lt;div class="classUm classDois"></span>
+      </p>
+
+      <p>
+        Para tags ainda mais especificas, como links, existem os "IDs", funciona como uma class:
+      </p>
+
+      <p>
+        <span>&lt;div class="classe" id="div3"></span>
+      </p>
+
+      <p>
+        <span>&lt;a href="div3"> Acesse a div 3</a></span> (<a href="#">Acesse a div 3</a>)
+      </p>
+
+      <p>
+        Assim, toda vez que esse link for usado (clickado), a pagina será atualizada para a div com o id
+      </p>
+
+      <div>
+        <p>
+          <strong>
+            "Ao contrario do html, css "não possui tags especificas", apenas configurações em inglês, como backgrounds,
+            align, fonts, colors, e animations, sim é possivel adicionar animações no css, como é visto nas telas
+            "menu",
+            "formulario" e no exemplo abaixo é possivel ver mais claramente."
+          </strong>
+        </p>
+
+
+        <li>
+          <a class="links" href="">Degrade animado com texto editavel</a>
+        </li>
+
+        <center>
+          <img src="/Imagens do site/CSS/Ex de Text Html.png" alt="" width="50%" class="img-thumbnail">
+          <img src="/Imagens do site/CSS/Ex de Text CSS.png" alt="" width="50%" class="img-thumbnail">
+        </center>
+      </div>
+
+      <h3>Backgrounds</h3>
+
+      <p>
+        Para trocar fundos de containers são usados background-color, background-image, background (se tiver mais)
+      </p>
+
+      <h3>alinhamentos</h3>
+      <p>
+        <li><span>text-align</span> (Alinhamento de texto)</li>
+        <li><span>align-itens</span> (alinhamento de itens)</li>
+        <li><span>align-self</span> (alinha itens-flex da linha flex alvo, sobreescrevendo o valor align-items)</li>
+        <li><span>align-content</span> (define a distribuição entre e ao redor dos items do conteúdo do eixo transversal
+          de uma flexbox ou do eixo de bloco de uma grid.) </li>
+      <p>
+        Entre outros...
+      </p>
+      </p>
+
+      <h3>Dimensões</h3>
+
+      <li><span>height</span> (altura)</li>
+      <li><span>width</span> (largura)</li>
+      <li><span>margin; top; left; bottom; right</span> (margem; cima; esquerda; baixo; direita;)</li>
+      <li><span>padding " "</span> (preencimento/"margem por dentro"; " ":)</li>
+      <li><span>border</span> (borda)</li>
+
+      <center>
+        <img class="img-thumbnail" src="/Imagens do site/CSS/Margens.png" width="50%">
+      </center>
+
+      <!--Flexbox-->
+      <div>
+        <h3>Flexbox</h3>
+        <li><strong>Flex container</strong> é o elemento que envolve sua estrutura. Você define que um elemento é um
+          Flex
+          Container com a propriedade <span>display</span> e valores <span>flex</span> ou <span>inline-flex.</span></li>
+
+        <h3>Propriedades para o elemento-pai</h3>
+        <center>
+          <img src="https://css-tricks.com/wp-content/uploads/2018/10/01-container.svg" class="img-thumbnail" alt=""
+            width="50%">
+        </center>
+
+        <p>
+          Quando utilizamos o Flexbox, é muito importante saber quais propriedades são declaradas no elemento-pai (por
+          exemplo, uma <span>div</span> que irá conter os elementos a serem alinhados) e quais serão declaradas nos
+          elementos-filhos.
+        </p>
+
+        <h4>Display</h4>
+        <p>
+          Esta propriedade define um flex container; inline ou block dependendo dos valores passados. Coloca todos os
+          elementos-filhos diretos num contexto Flex.
+        </p>
+
+        <div>
+          <h4>flex-direction</h4>
+
+          <center>
+            <img class="img-thumbnail" src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg" alt=""
+              width="50%">
+          </center>
+
+          <p>
+            Estabelece o eixo principal, definindo assim a direção em que os flex items são alinhados no flex container.
+            O
+            Flexbox é (com exceção de um wrapping opcional) um conceito de leiaute de uma só direção. Pense nos flex
+            items
+            inicialmente posicionaids ou em linhas horizontais ou em colunas verticais.
+          </p>
+        </div>
+
+        <li><span>row(padrão):</span> esquerda para a direita em <span>ltr</span> (left to right), direita para a
+          esquerda
+          em <span>rtl</span> (right to left)</li>
+
+        <li><span>row-reverse:</span> direita para a esquerda em <span>ltr</span>, esquerda para a direita em
+          <span>rtl</span>
+        </li>
+
+        <li><span>column:</span> mesmo que <span>row</span>, mas de cima para baixo</li>
+
+        <li><span>column-reverse:</span> mesmo que <span>row-reverse</span> mas de baixo para cima</li>
+
+        <div>
+          <h4>Flex-wrap</h4>
+
+          <center>
+            <img class="img-thumbnail" src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg" alt=""
+              width="50%">
+          </center>
+
+          <p>
+            Por padrão, os flex items vão todos tentar se encaixar em uma só linha. Com esta propriedade você pode
+            modificar
+            esse comportamento e permitir que os ítens quebrem para uma linha seguinte conforme for necessário.
+          </p>
+          <li><span>nowrap (padrão):</span> todos os flex items ficarão em uma só linha</li>
+          <li><span>wrap:</span> os flex items vão quebrar em múltiplas linhas, de cima para baixo</li>
+          <li><span>wrap-reverse:</span> os flex items vão quebrar em múltiplas linhas de baixo para cima</li>
+        </div>
+
+        <div>
+          <h4>Flex-flow</h4>
+          <p>A propriedade flex-flow é uma propriedade shorthand (uma mesma declaração inclui vários valores
+            relacionados
+            a
+            mais de uma propriedade) que inclui <span>flex-direction</span> e <span>flex-wrap</span>. Determina quais
+            serão
+            os eixos pricipal e transversal do container. O valor padrão é <span>row nowrap.</span></p>
+        </div>
+
+        <div>
+          <h4>justify-content</h4>
+
+          <center>
+            <img class="img-thumbnail" src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg"
+              alt="" width="50%">
+          </center>
+
+          <p>
+            Esta propriedade define o alinhamento dos ítens ao longo do eixo principal. Ajuda a distribuir o espaço
+            livre
+            que sobrar no container tanto se todos os flex items em uma linha são inflexíveis, ou são flexíveis mas já
+            atingiram seu tamanho máximo. Também exerce algum controle sobre o alinhamento de ítens quando eles
+            ultrapassam o limite da linha.
+          </p>
+          <li><span>flex-start(padrão):</span> os ítens são alinhados junto à borda de início (start) de acordo com qual
+            for a <span>flex-direction</span> do container.</li>
+          <li><span>flex-end:</span> os ítens são alinhados junto à borda final (end) de acordo com qual for a
+            <span>flex-direction</span> do container.
+          </li>
+          <li><span>start:</span> os ítens são alinhados junto à borda de início da direção do <span>writing-mode</span>
+            (modo de escrita).</li>
+
+          <li><span>end:</span> os ítens são alinhados junto à borda final da direção do <span>writing-mode</span> (modo
+            de escrita).</li>
+
+          <li><span>left:</span> os ítens são alinhados junto à borda esquerda do container, a não ser que isso não faça
+            sentido com o <span>flex-direction</span> que estiver sendo utilizado. Nesse caso, se comporta como
+            <span>start.</span>
+          </li>
+
+          <li><span>right:</span> os ítens são alinhados junto à borda direita do container, a não ser que isso não faça
+            sentido com o <span>flex-direction</span> que estiver sendo utilizado. Nesse caso, se comporta como
+            <span>start.</span>
+          </li>
+
+          <li><span>center:</span> os ítens são centralizados na linha.</li>
+
+          <li><span>space-between:</span> os ítens são distribuídos de forma igual ao longo da linha; o primeiro ítem
+            junto à borda inicial da linha, o último junto à borda final da linha.</li>
+
+          <li><span>space-around:</span> os ítens são distribuídos na linha com o mesmo espaçamento entre eles. Note
+            que,
+            visualmente, o espaço pode não ser igual, uma vez que todos os ítens tem a mesma quantidade de espaço dos
+            dois
+            lados: o primeiro item vai ter somente uma unidade de espaço junto à borda do container, mas duas unidades
+            de
+            espaço entre ele e o próximo ítem, pois o próximo ítem também tem seu próprio espaçamento que está sendo
+            aplicado.</li>
+
+          <li><span>space-evenly:</span> os ítens são distribuídos de forma que o espaçamento entre quaisquer dois itens
+            da linha (incluindo entre os ítens e as bordas) seja igual.</li>
+
+        </div>
+
+        <div>
+          <h4>align-items</h4>
+
+          <center>
+            <img class="img-thumbnail" src="https://css-tricks.com/wp-content/uploads/2018/10/align-items.svg" alt=""
+              width="50%">
+          </center>
+
+          <p>
+            define o comportamento padrão de como flex items são alinhados de acordo com o eixo transversal (cross
+            axis).
+            De certa forma, funciona de forma similar ao <span>justify-content</span>, porém no eixo transversal
+            (perpendicular ao eixo principal).
+          </p>
+
+          <li>stretch (padrão): estica os ítens para preencher o container, respeitando o <span>min-width</span>
+            <span>max-width</span>.
+          </li>
+
+          <li><span>flex-start</span> / <span>start</span> / <span>self-start:</span> ítens são posicionados no início
+            do
+            eixo transversal. A diferença entre eles é sutil e diz respeito às regras de <span>flex-direction</span> ou
+            <span>writing-mode.</span>
+          </li>
+
+          <li><span>center:</span> ítens são centralizados no eixo transversal.</li>
+
+          <li><span>baseline:</span> ítens são alinhados de acordo com suas baselines.</li>
+
+          <p>Os modificadores <span>safe</span> e <span>unsafe</span> pode ser usados em conjunto com todas essas
+            palavras-chave (favor conferir o suporte de cada navegador) e servem para prevenir qualquer alinhamento de
+            elementos que faça com que o conteúdo fique inacessível (por exemplo, para fora da tela).</p>
+        </div>
+
+        <div>
+          <h4>Align-content</h4>
+
+          <center>
+            <img class="img-thumbnail" src="https://css-tricks.com/wp-content/uploads/2018/10/align-content.svg" alt=""
+              width="50%">
+          </center>
+
+          <p>
+            Organiza as linhas dentro de um flex container quando há espaço extra no eixo transversal, similar ao modo
+            como <span>justify-content</span> alinha ítens individuais dentro do eixo principal.
+          </p>
+
+          <li><span>flex-start / start:</span> ítens alinhados com o início do container. O valor (com maior suporte dos
+            navegadores) <span>flex-start</span> se guia pela <span>flex-direction</span>, enquanto <span>start</span>
+            se guia pela direção do <span>writing-mode.</span></li>
+
+          <li><span>flex-end / end:</span> ítens alinhados com o final do container. O valor (com maior suporte dos
+            navegadores) <span>flex-end</span> se guia pela <span>flex-direction</span>, enquanto end se guia pela
+            direção do <span>writing-mode.</span></li>
+
+          <li><span>center:</span> ítens centralizados no container.</li>
+
+          <li><span>space-between:</span> ítens distribuídos igualmente; a primeira linha junto ao início do container e
+            a última linha junto ao final do container.</li>
+
+          <li><span>space-around:</span> ítens distribuídos igualmente com o mesmo espaçamento entre cada linha.</li>
+
+          <li><span>space-evenly:</span> ítens distribuídos igualmente com o mesmo espaçamento entre eles.</li>
+
+          <li><span>stretch(padrão):</span> ítens em cada linha esticam para ocupar o espaço remanescente entre elas.
+          </li>
+
+          <p>Os modificadores <span>safe</span> e <span>unsafe</span> pode ser usados em conjunto com todas essas
+            palavras-chave (favor conferir o suporte de cada navegador) e servem para prevenir qualquer alinhamento de
+            elementos que faça com que o conteúdo fique inacessível (por exemplo, para fora da tela).</p>
+        </div>
+
+      </div>
+
+      <!--Vantagens do CSS-->
+      <div>
+        <h3>Vantagens do CSS</h3>
+        <p>
+          A diferença entre um site que implementa CSS e outro que não o usa é gigantesca e notável. Você já deve ter
+          visto um site que não carrega completamente ou tem um plano de fundo branco com texto azul e preto. Isso
+          significa que a parte CSS do site não foi carregada corretamente ou não existe. E é assim que um site somente
+          com HTML se parece. Acredito que você vai concordar comigo de que isso não é muito bonito, certo? Antes de
+          usar
+          CSS, toda a estilização tinha que ser incluída na marcação HTML. Isso significa que você deveria descrever
+          separadamente todo o plano de fundo, as cores das fontes, os alinhamentos, etc. Mas o CSS permite que você
+          estilize tudo em um arquivo diferente, criando assim o estilo separadamente. E, mais tarde, faça integração do
+          arquivo CSS na parte superior da marcação HTML. Isso mantém a marcação HTML limpa e fácil de manter.
+          Resumindo,
+          com o CSS você não precisa mais escrever repetidamente como os elementos individuais se parecem. Isso
+          economiza
+          tempo, encurta o código e diminui a chance de erros. O CSS permite que você tenha vários estilos em uma página
+          HTML, tornando as possibilidades de personalização quase infinitas. Hoje em dia, isso está se tornando mais
+          uma
+          necessidade do que um simples recurso.
+        </p>
+      </div>
+      <p>
+        <center>
+          (Ao decorrer do tempo, e algumas pesquisas, esse site será atualizado trazendo conteúdos novos)
+        </center>
+      </p>
+    </div>
+
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<footer>
+  Cadastre para receber novidades direto no email 
+  <br>
+  <a class="footer" href="Formulario.html"> Formulário</a>
+</footer>
+
+</html>

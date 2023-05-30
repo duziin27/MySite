@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/Css do site/Formulario.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">Front-end</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Menu.html">Menu<span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Formulario.html">Cadastro</a>
+      </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Conteúdos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Html.html">HTML</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="Css.html">CSS</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="JavaScript.html">JavaScript</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="BootsStrap.html">Bootstrap</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Back-end</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Full stack</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Conteúdo específico" aria-label="Pesquisar">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Em Breve</button>(Out of order)
+      </form>
+    </div>
+  </nav>
+
+  <main>
+    <form class="form" action="">
+        <div class="login">
+          <label for="email">Email:</label>
+          <input class="login" type="email" name="email" required>
+        </div>
+
+        <div class="login">
+          <label for="senha">Senha:</label>
+          <input class="login" type="password" name="senha" required>
+        </div>
+      </div>
+
+      <div>
+        <button class="botao" type="reset">Apagar</button>
+        <button class="botao" type="button"><a href="Menu.html">Enviar</a></button>
+      </div>
+
+      <div>
+        Não possui cadastro? <a href="Formulario.html">Clique aqui</a> para fazer.
+      </div>
+      <div>
+        <a href="#">Download do conteúdo</a>
+      </div>
+    </form>
+  </main>
+</body>
+
+<footer>
+  Cadastre para receber novidades direto no email 
+  <br>
+  <a href="Formulario.html"> Formulário</a>
+</footer>
+
+ <!--JavaScript-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+ crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+ integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+ crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+ integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+ crossorigin="anonymous"></script>
+</html>
+
